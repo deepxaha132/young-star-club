@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Young Star Club | Estd. 1985 • Sapatgram</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-main: #f8fafc;
+      --bg-card: #ffffff;
+      --bg-hero: #0f172a;
+      --text-primary: #0f172a;
+      --text-muted: #475569;
+      --accent: #ea580c;
+      --accent-dark: #c2410c;
+      --accent-soft: #fff7ed;
+      --border: #e2e8f0;
+      --whatsapp: #16a34a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-primary);
+      line-height: 1.6;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Header & Navbar */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0.9rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .club-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .club-logo-nav {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--accent);
+      background: #fff7ed;
+    }
+
+    .club-brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .club-brand-text strong {
+      font-size: 1.18rem;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: -0.01em;
+    }
+
+    .club-brand-text span {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.35rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #475569;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    /* Hero Banner */
+    .hero {
+      background: var(--bg-hero);
+      color: #ffffff;
+      padding: 4.5rem 1.5rem 4.2rem;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+
+    .hero-inner {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .hero-logo {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent);
+      margin-bottom: 1rem;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45);
+      background: #1e293b;
+    }
+
+    .estd-pill {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: #fde68a;
+      padding: 0.35rem 1rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      margin-bottom: 1.15rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.1rem, 5vw, 3.4rem);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero-address {
+      font-size: 1rem;
+      color: #e2e8f0;
+      font-weight: 500;
+      margin-bottom: 1.15rem;
+    }
+
+    .hero p {
+      color: #cbd5e1;
+      font-size: 1rem;
+      max-width: 640px;
+      margin: 0 auto 2rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.9rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.8rem 1.5rem;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 0.92rem;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.2s, opacity 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      opacity: 0.94;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #ffffff;
+    }
+
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.1);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    /* Main Container */
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    section {
+      padding: 4rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    section:last-of-type {
+      border-bottom: none;
+    }
+
+    .sec-header {
+      margin-bottom: 2.25rem;
+    }
+
+    .sec-tag {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      margin-bottom: 0.35rem;
+    }
+
+    .sec-header h2 {
+      font-size: 1.85rem;
+      font-weight: 800;
+      color: var(--text-primary);
+    }
+
+    .sec-header p {
+      color: var(--text-muted);
+      font-size: 0.96rem;
+      margin-top: 0.4rem;
+    }
+
+    /* Grid Cards */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.35rem;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 1.15rem;
+    }
+
+    .card, .sport-card, .member-card, .gallery-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
+      transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s ease;
+    }
+
+    .card {
+      padding: 1.6rem;
+    }
+
+    .card:hover, .gallery-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+    }
+
+    .card-badge {
+      display: inline-block;
+      background: var(--accent);
+      color: #ffffff;
+      font-size: 0.74rem;
+      font-weight: 700;
+      padding: 0.25rem 0.7rem;
+      border-radius: 6px;
+      margin-bottom: 0.75rem;
+    }
+
+    .card h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+    }
+
+    /* Sports Cards */
+    .sport-card {
+      padding: 1.4rem;
+      text-align: center;
+    }
+
+    .sport-num {
+      width: 38px;
+      height: 38px;
+      margin: 0 auto 0.85rem;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #ffffff;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.95rem;
+    }
+
+    .sport-card h3 {
+      font-size: 1.08rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .sport-card p {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+    }
+
+    /* Gallery & Filter Buttons */
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .filter-btn {
+      padding: 0.45rem 1.05rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--bg-card);
+      color: var(--text-muted);
+      font-weight: 700;
+      font-size: 0.84rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .filter-btn.active,
+    .filter-btn:hover {
+      background: var(--accent);
+      color: #ffffff;
+      border-color: var(--accent);
+    }
+
+    .gallery-card {
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .gallery-media {
+      height: 220px;
+      background: #0f172a;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .gallery-media img,
+    .gallery-media video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .year-badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: var(--accent);
+      color: #ffffff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 6px;
+      z-index: 2;
+    }
+
+    .type-badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: rgba(15, 23, 42, 0.8);
+      color: #ffffff;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 6px;
+      z-index: 2;
+    }
+
+    .gallery-caption {
+      padding: 1rem 1.25rem;
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    /* Committee */
+    .member-card {
+      padding: 1.5rem;
+    }
+
+    .member-role {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--accent);
+      letter-spacing: 0.05em;
+    }
+
+    .member-name {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin: 0.3rem 0;
+    }
+
+    .member-phone {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    /* Contact Box */
+    .contact-banner {
+      background: var(--bg-hero);
+      color: #ffffff;
+      border-radius: 18px;
+      padding: 2.75rem 2rem;
+      text-align: center;
+    }
+
+    .contact-banner h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .contact-banner p {
+      color: #cbd5e1;
+      max-width: 550px;
+      margin: 0 auto 1.75rem;
+      font-size: 0.95rem;
+    }
+
+    .btn-whatsapp {
+      background: var(--whatsapp);
+      color: #ffffff;
+    }
+
+    /* Full Admin Control Panel */
+    .admin-panel {
+      display: none;
+      background: #ffffff;
+      border: 2px solid var(--accent);
+      border-radius: 16px;
+      padding: 1.75rem;
+      margin-top: 2rem;
+      box-shadow: 0 15px 35px rgba(15, 23, 42, 0.15);
+      color: #0f172a;
+    }
+
+    .admin-panel.open {
+      display: block;
+    }
+
+    .admin-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 1rem 0 1.25rem;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 0.75rem;
+    }
+
+    .admin-tab-btn {
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      border: 1px solid #cbd5e1;
+      background: #f8fafc;
+      font-weight: 700;
+      font-size: 0.85rem;
+      cursor: pointer;
+    }
+
+    .admin-tab-btn.active {
+      background: var(--accent);
+      color: #ffffff;
+      border-color: var(--accent);
+    }
+
+    .admin-section {
+      display: none;
+    }
+
+    .admin-section.active {
+      display: block;
+    }
+
+    .admin-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .admin-box {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 1.25rem;
+    }
+
+    .admin-box h4 {
+      margin-bottom: 0.75rem;
+      font-size: 1rem;
+      color: #0f172a;
+    }
+
+    .form-group {
+      margin-bottom: 0.8rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+      color: #475569;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.6rem 0.75rem;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 0.88rem;
+    }
+
+    .form-group input[type="color"] {
+      height: 42px;
+      padding: 4px;
+      cursor: pointer;
+    }
+
+    .status-msg {
+      margin-top: 0.75rem;
+      font-size: 0.86rem;
+      font-weight: 700;
+    }
+
+    /* Lightbox Modal */
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.94);
+      z-index: 999;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      flex-direction: column;
+    }
+
+    .lightbox.active {
+      display: flex;
+    }
+
+    .lightbox img,
+    .lightbox video {
+      max-width: 92%;
+      max-height: 78vh;
+      border-radius: 12px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    }
+
+    .lightbox-caption {
+      color: #ffffff;
+      margin-top: 1rem;
+      font-weight: 600;
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 25px;
+      background: rgba(255, 255, 255, 0.15);
+      color: #fff;
+      border: none;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      font-size: 1.4rem;
+      cursor: pointer;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--bg-hero);
+      color: #cbd5e1;
+      text-align: center;
+      padding: 2rem 1.5rem;
+      font-size: 0.85rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .admin-trigger {
+      display: inline-block;
+      margin-top: 0.75rem;
+      background: rgba(255, 255, 255, 0.1);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      padding: 0.4rem 1rem;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .admin-trigger:hover {
+      background: var(--accent);
+    }
+
+    @media (max-width: 680px) {
+      .nav-links {
+        display: none;
+      }
+      .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="nav-container">
+      <a href="#" class="club-brand">
+        <img id="navLogo" class="club-logo-nav" src="https://ui-avatars.com/api/?name=YSC&background=ea580c&color=fff&bold=true" alt="Young Star Club Logo" />
+        <div class="club-brand-text">
+          <strong id="txt_navTitle">YOUNG STAR CLUB</strong>
+          <span id="txt_navSub">Estd. 1985 &bull; Sapatgram</span>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="#puja">Puja & Culture</a>
+        <a href="#national">National Days</a>
+        <a href="#sports">Sports</a>
+        <a href="#social">Social Activities</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="hero-inner">
+      <img id="heroLogo" class="hero-logo" src="https://ui-avatars.com/api/?name=YSC&background=ea580c&color=fff&size=200&bold=true" alt="Young Star Club Logo" />
+      <br />
+      <div class="estd-pill" id="txt_estdPill">ESTD. 1985 &bull; SERVING COMMUNITY FOR 40+ YEARS</div>
+      <h1 id="txt_heroTitle">Young Star Club</h1>
+      <div class="hero-address" id="txt_heroAddress">Kargeswar Roy Road, Ward No. 7, Sapatgram, Assam</div>
+      <p id="txt_heroIntro">
+       Young Star Club has united the youth and families of Sapatgram since 1985 through traditional Pujas, national celebrations, competitive sports, and grassroots community service.
+      </p>
+      <div class="hero-actions">
+        <a href="#gallery" class="btn btn-primary">Photos & Videos Gallery</a>
+        <a href="#contact" class="btn btn-outline">Connect With Club</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- 1. Yearly Puja & Cultural Programs -->
+    <section id="puja">
+      <div class="sec-header">
+        <div class="sec-tag">Heritage & Devotion</div>
+        <h2>Annual Puja & Cultural Celebrations</h2>
+        <p>Traditional celebrations bringing together families and neighbors of Ward No. 7 and Sapatgram.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <span class="card-badge">Annual Grand Celebration</span>
+          <h3>Shree Shree Kali Puja</h3>
+          <p id="txt_kaliPuja">
+            Our flagship annual celebration featuring traditional Shyama Puja rituals, artistically crafted pandals, dazzling lighting across Ward No. 7, community Bhog distribution, and cultural nights for all residents.
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="card-badge">Youth & Education</span>
+          <h3>Shree Shree Saraswati Puja</h3>
+          <p id="txt_saraswatiPuja">
+            Dedicated to students and youth, celebrated with morning Pushpanjali, traditional attire, educational and cultural competitions, and festive community gatherings in the heart of Sapatgram.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. National Days Celebration -->
+    <section id="national">
+      <div class="sec-header">
+        <div class="sec-tag">Patriotism & Unity</div>
+        <h2>National Days & Patriotic Observances</h2>
+        <p>Honoring the nation and our freedom fighters with flag hoisting and community gatherings.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <span class="card-badge">23rd January</span>
+          <h3>Netaji Subhas Chandra Bose Jayanti</h3>
+          <p id="txt_jan23">
+            Observing Parakram Diwas with floral tributes to Netaji Subhas Chandra Bose, patriotic speeches, and youth inspiration programs organized by club members.
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="card-badge">26th January</span>
+          <h3>Republic Day Celebration</h3>
+          <p id="txt_jan26">
+            Ceremonial hoisting of the National Flag at the club premises, followed by the National Anthem, sweets distribution for local children, and friendly neighborhood matches.
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="card-badge">15th August</span>
+          <h3>Independence Day Celebration</h3>
+          <p id="txt_aug15">
+            Celebrating India's freedom with flag hoisting, homage to freedom fighters, community march, and day-long sports and cultural events for Ward No. 7 residents.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Sports & Games -->
+    <section id="sports">
+      <div class="sec-header">
+        <div class="sec-tag">Fitness & Team Spirit</div>
+        <h2>Sports & Tournaments</h2>
+        <p>Encouraging physical fitness and healthy competition through outdoor and indoor games.</p>
+      </div>
+
+      <div class="grid-4">
+        <div class="sport-card">
+          <div class="sport-num">01</div>
+          <h3>Cricket</h3>
+          <p id="txt_cricket">Annual knockout tennis-ball cricket tournaments and weekend friendly matches encouraging local sporting talent.</p>
+        </div>
+
+        <div class="sport-card">
+          <div class="sport-num">02</div>
+          <h3>Badminton</h3>
+          <p id="txt_badminton">Evening floodlight badminton tournaments during the winter season with singles and doubles categories.</p>
+        </div>
+
+        <div class="sport-card">
+          <div class="sport-num">03</div>
+          <h3>Carrom & Indoor</h3>
+          <p id="txt_carrom">Regular club-house carrom and indoor board games bringing all age groups together every evening.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Social Activities Section -->
+    <section id="social">
+      <div class="sec-header">
+        <div class="sec-tag">Community Welfare</div>
+        <h2>Social Activities & Public Service</h2>
+        <p>Beyond festivals and sports, Young Star Club actively stands for social responsibility.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <span class="card-badge">Clean & Green</span>
+          <h3>Cleanliness & Plantation Drives</h3>
+          <p id="txt_social1">
+            Regular cleanliness drives around Kargeswar Roy Road, Ward No. 7, and tree plantation initiatives for a greener Sapatgram.
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="card-badge">Public Support</span>
+          <h3>Community Relief & Assistance</h3>
+          <p id="txt_social2">
+            Extending helping hands during local emergencies, medical support, and essential distribution for underprivileged families.
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="card-badge">Social Awareness</span>
+          <h3>Health & Youth Awareness</h3>
+          <p id="txt_social3">
+            Organizing blood donation camps, health check-ups, and anti-drug awareness initiatives for local youth.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Dynamic Year-Wise Photo & Video Gallery -->
+    <section id="gallery">
+      <div class="sec-header">
+        <div class="sec-tag">Memories & Archive</div>
+        <h2>Club Photos & Videos (Year-Wise)</h2>
+        <p>Click any photo or video to view full screen, or filter by year below.</p>
+      </div>
+
+      <div class="filter-bar" id="filterBar">
+        <button class="filter-btn active" onclick="filterGallery('all', this)">All Years</button>
+      </div>
+
+      <div class="grid-3" id="galleryGrid">
+        <!-- Photos & Videos load here -->
+      </div>
+    </section>
+
+    <!-- 6. Committee / Office Bearers -->
+    <section id="committee">
+      <div class="sec-header">
+        <div class="sec-tag">Leadership</div>
+        <h2>Executive Committee</h2>
+        <p>Key office bearers managing the day-to-day operations and annual events of Young Star Club.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="member-card">
+          <div class="member-role">President</div>
+          <div class="member-name" id="txt_presName">[President Name]</div>
+          <div class="member-phone" id="txt_presPhone">Contact: +91 XXXXX XXXXX</div>
+        </div>
+
+        <div class="member-card">
+          <div class="member-role">Secretary</div>
+          <div class="member-name" id="txt_secName">[Secretary Name]</div>
+          <div class="member-phone" id="txt_secPhone">Contact: +91 XXXXX XXXXX</div>
+        </div>
+
+        <div class="member-card">
+          <div class="member-role">Treasurer / Sports In-charge</div>
+          <div class="member-name" id="txt_treasName">[Member Name]</div>
+          <div class="member-phone" id="txt_treasPhone">Contact: +91 XXXXX XXXXX</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Contact Section -->
+    <section id="contact">
+      <div class="contact-banner">
+        <h2>Connect With Young Star Club</h2>
+        <p id="txt_contactDesc">
+          Kargeswar Roy Road, Ward No. 7, Sapatgram, Dist. Dhubri, Assam. For Puja invitations, tournament queries, or club membership, reach out directly.
+        </p>
+        <div class="hero-actions">
+          <a id="link_whatsapp" href="https://wa.me/91XXXXXXXXXX?text=Namaskar%20Young%20Star%20Club!" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+            Chat on WhatsApp
+          </a>
+          <a id="link_social" href="https://instagram.com/YOUR_CLUB_PAGE" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            Follow Club Social Page
+          </a>
+        </div>
+      </div>
+
+      <!-- FULL NO-CODE ADMIN CONTROL PANEL -->
+      <div class="admin-panel" id="adminPanel">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <h3 style="color: var(--accent);">Young Star Club — Live Admin Panel</h3>
+          <button onclick="closeAdmin()" style="background: #e2e8f0; border: none; padding: 6px 14px; border-radius: 6px; font-weight: 700; cursor: pointer;">Close &times;</button>
+        </div>
+        <p style="font-size: 0.86rem; color: #475569; margin-top: 4px;">
+          Edit photos, videos, club text, committee names, and website colors directly from here. Everything saves live for all visitors!
+        </p>
+
+        <!-- Admin Tabs -->
+        <div class="admin-tabs">
+          <button class="admin-tab-btn active" onclick="switchAdminTab('tabMedia', this)">1. Photos, Videos & Logo</button>
+          <button class="admin-tab-btn" onclick="switchAdminTab('tabCommittee', this)">2. Committee & Contact</button>
+          <button class="admin-tab-btn" onclick="switchAdminTab('tabText', this)">3. Edit Events & Text</button>
+          <button class="admin-tab-btn" onclick="switchAdminTab('tabColors', this)">4. Website & Card Colors</button>
+        </div>
+
+        <!-- TAB 1: MEDIA UPLOAD (LOGO + PHOTOS + VIDEOS) -->
+        <div id="tabMedia" class="admin-section active">
+          <div class="admin-grid">
+            <div class="admin-box">
+              <h4>Change Club Logo</h4>
+              <div class="form-group">
+                <label>Select Logo Image (PNG / JPG)</label>
+                <input type="file" id="logoFileInput" accept="image/*" />
+              </div>
+              <button class="btn btn-primary" style="width: 100%;" onclick="uploadLogo()">Update Club Logo</button>
+              <div class="status-msg" id="logoStatus"></div>
+            </div>
+
+            <div class="admin-box">
+              <h4>Add Year-Wise Photo or Video</h4>
+              <div class="form-group">
+                <label>Select Photo (JPG/PNG) or Video (MP4)</label>
+                <input type="file" id="galleryFileInput" accept="image/*,video/*" />
+              </div>
+              <div class="form-group">
+                <label>Event Year (e.g. 2026, 2025, 2024)</label>
+                <input type="number" id="photoYearInput" value="2026" min="1985" max="2099" />
+              </div>
+              <div class="form-group">
+                <label>Title / Event Caption</label>
+                <input type="text" id="photoTitleInput" placeholder="e.g. Kali Puja Pandal Opening Video" />
+              </div>
+              <button class="btn btn-primary" style="width: 100%;" onclick="uploadGalleryMedia()">Upload Photo / Video</button>
+              <div class="status-msg" id="galleryStatus"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 2: COMMITTEE & CONTACT LINKS -->
+        <div id="tabCommittee" class="admin-section">
+          <div class="admin-grid">
+            <div class="admin-box">
+              <h4>Office Bearers</h4>
+              <div class="form-group"><label>President Name</label><input type="text" id="in_presName" /></div>
+              <div class="form-group"><label>President Phone</label><input type="text" id="in_presPhone" /></div>
+              <div class="form-group"><label>Secretary Name</label><input type="text" id="in_secName" /></div>
+              <div class="form-group"><label>Secretary Phone</label><input type="text" id="in_secPhone" /></div>
+              <div class="form-group"><label>Treasurer / Sports In-charge</label><input type="text" id="in_treasName" /></div>
+              <div class="form-group"><label>Treasurer Phone</label><input type="text" id="in_treasPhone" /></div>
+            </div>
+
+            <div class="admin-box">
+              <h4>Club Contact & Social Links</h4>
+              <div class="form-group">
+                <label>WhatsApp Number (with 91, e.g. 919876543210)</label>
+                <input type="text" id="in_whatsapp" placeholder="919876543210" />
+              </div>
+              <div class="form-group">
+                <label>Instagram / Facebook Page Full URL</label>
+                <input type="text" id="in_social" placeholder="https://instagram.com/youngstarclub" />
+              </div>
+              <div class="form-group">
+                <label>Club Address Line</label>
+                <input type="text" id="in_address" />
+              </div>
+              <button class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;" onclick="saveSiteSettings()">Save Committee & Contact Live</button>
+              <div class="status-msg" id="saveStatus1"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 3: EDIT ALL WEBSITE TEXT -->
+        <div id="tabText" class="admin-section">
+          <div class="admin-grid">
+            <div class="admin-box">
+              <h4>Hero & Puja Text</h4>
+              <div class="form-group"><label>Hero Intro</label><textarea id="in_heroIntro" rows="3"></textarea></div>
+              <div class="form-group"><label>Kali Puja Description</label><textarea id="in_kaliPuja" rows="3"></textarea></div>
+              <div class="form-group"><label>Saraswati Puja Description</label><textarea id="in_saraswatiPuja" rows="3"></textarea></div>
+            </div>
+
+            <div class="admin-box">
+              <h4>National Days & Social Activities</h4>
+              <div class="form-group"><label>23 Jan (Netaji Jayanti)</label><textarea id="in_jan23" rows="2"></textarea></div>
+              <div class="form-group"><label>26 Jan (Republic Day)</label><textarea id="in_jan26" rows="2"></textarea></div>
+              <div class="form-group"><label>15 Aug (Independence Day)</label><textarea id="in_aug15" rows="2"></textarea></div>
+              <div class="form-group"><label>Social Activity 1 (Cleanliness)</label><textarea id="in_social1" rows="2"></textarea></div>
+              <div class="form-group"><label>Social Activity 2 (Relief)</label><textarea id="in_social2" rows="2"></textarea></div>
+              <div class="form-group"><label>Social Activity 3 (Awareness)</label><textarea id="in_social3" rows="2"></textarea></div>
+            </div>
+          </div>
+          <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;" onclick="saveSiteSettings()">Save All Text Changes Live</button>
+          <div class="status-msg" id="saveStatus2"></div>
+        </div>
+
+        <!-- TAB 4: COLORS & THEME CUSTOMIZER -->
+        <div id="tabColors" class="admin-section">
+          <div class="admin-grid">
+            <div class="admin-box">
+              <h4>Customize Website & Card Colors</h4>
+              <div class="form-group">
+                <label>Theme Accent Color (Buttons, Badges & Borders)</label>
+                <input type="color" id="col_accent" value="#ea580c" oninput="previewColors()" />
+              </div>
+              <div class="form-group">
+                <label>Hero & Footer Banner Background Color</label>
+                <input type="color" id="col_hero" value="#0f172a" oninput="previewColors()" />
+              </div>
+              <div class="form-group">
+                <label>Main Page Background Color</label>
+                <input type="color" id="col_bgMain" value="#f8fafc" oninput="previewColors()" />
+              </div>
+              <div class="form-group">
+                <label>Cards Background Color</label>
+                <input type="color" id="col_bgCard" value="#ffffff" oninput="previewColors()" />
+              </div>
+              <div style="display: flex; gap: 0.75rem; margin-top: 1rem;">
+                <button class="btn btn-primary" style="flex: 1;" onclick="saveSiteSettings()">Save Colors Live</button>
+                <button class="btn" style="background: #e2e8f0; color: #0f172a;" onclick="resetDefaultColors()">Reset Default</button>
+              </div>
+              <div class="status-msg" id="saveStatus3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Fullscreen Image & Video Lightbox -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+    <button class="lightbox-close" onclick="closeLightbox(event)">&times;</button>
+    <div id="lightboxMediaContainer" style="display:flex; justify-content:center; width:100%;"></div>
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div>&copy; 1985 &ndash; 2026 <strong>Young Star Club</strong> &bull; Kargeswar Roy Road, W/No. 7, Sapatgram. All Rights Reserved.</div>
+    <button class="admin-trigger" onclick="openAdmin()">Admin Panel (Edit Text, Colors, Photos & Videos)</button>
+  </footer>
+
+  <script>
+    // ==========================================
+    // CLOUDINARY & ADMIN CONFIGURATION
+    // ==========================================
+    const CLOUD_NAME = "tn8r4wsk";
+    const UPLOAD_PRESET = "jdplozq2";
+    const ADMIN_PASS = "Adminysc132@AA";
+
+    const defaultMedia = [
+      {
+        url: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=80",
+        type: "image",
+        year: "2025",
+        title: "Annual Kali Puja & Cultural Night (Sample — Upload Photos/Videos via Admin)"
+      },
+      {
+        url: "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=800&q=80",
+        type: "image",
+        year: "2025",
+        title: "Inter-Ward Cricket & Sports Tournament (Sample)"
+      },
+      {
+        url: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&w=800&q=80",
+        type: "image",
+        year: "2024",
+        title: "Community Social Service & Plantation Drive (Sample)"
+      }
+    ];
+
+    let allMedia = [];
+    let currentFilter = "all";
+
+    // Admin Panel Navigation
+    function openAdmin() {
+      const entered = prompt("Enter Club Admin Password:");
+      if (entered === ADMIN_PASS) {
+        populateAdminInputs();
+        document.getElementById("adminPanel").classList.add("open");
+        document.getElementById("adminPanel").scrollIntoView({ behavior: "smooth" });
+      } else if (entered !== null) {
+        alert("Incorrect Password! Access Denied.");
+      }
+    }
+
+    function closeAdmin() {
+      document.getElementById("adminPanel").classList.remove("open");
+    }
+
+    function switchAdminTab(tabId, btn) {
+      document.querySelectorAll(".admin-section").forEach(s => s.classList.remove("active"));
+      document.querySelectorAll(".admin-tab-btn").forEach(b => b.classList.remove("active"));
+      document.getElementById(tabId).classList.add("active");
+      btn.classList.add("active");
+    }
+
+    // Live Color Preview & Reset
+    function previewColors() {
+      document.documentElement.style.setProperty("--accent", document.getElementById("col_accent").value);
+      document.documentElement.style.setProperty("--bg-hero", document.getElementById("col_hero").value);
+      document.documentElement.style.setProperty("--bg-main", document.getElementById("col_bgMain").value);
+      document.documentElement.style.setProperty("--bg-card", document.getElementById("col_bgCard").value);
+    }
+
+    function resetDefaultColors() {
+      document.getElementById("col_accent").value = "#ea580c";
+      document.getElementById("col_hero").value = "#0f172a";
+      document.getElementById("col_bgMain").value = "#f8fafc";
+      document.getElementById("col_bgCard").value = "#ffffff";
+      previewColors();
+    }
+
+    // Populate Admin Form Fields with Current Page Values
+    function populateAdminInputs() {
+      document.getElementById("in_presName").value = document.getElementById("txt_presName").textContent;
+      document.getElementById("in_presPhone").value = document.getElementById("txt_presPhone").textContent;
+      document.getElementById("in_secName").value = document.getElementById("txt_secName").textContent;
+      document.getElementById("in_secPhone").value = document.getElementById("txt_secPhone").textContent;
+      document.getElementById("in_treasName").value = document.getElementById("txt_treasName").textContent;
+      document.getElementById("in_treasPhone").value = document.getElementById("txt_treasPhone").textContent;
+      document.getElementById("in_address").value = document.getElementById("txt_heroAddress").textContent;
+      document.getElementById("in_heroIntro").value = document.getElementById("txt_heroIntro").textContent.trim();
+      document.getElementById("in_kaliPuja").value = document.getElementById("txt_kaliPuja").textContent.trim();
+      document.getElementById("in_saraswatiPuja").value = document.getElementById("txt_saraswatiPuja").textContent.trim();
+      document.getElementById("in_jan23").value = document.getElementById("txt_jan23").textContent.trim();
+      document.getElementById("in_jan26").value = document.getElementById("txt_jan26").textContent.trim();
+      document.getElementById("in_aug15").value = document.getElementById("txt_aug15").textContent.trim();
+      document.getElementById("in_social1").value = document.getElementById("txt_social1").textContent.trim();
+      document.getElementById("in_social2").value = document.getElementById("txt_social2").textContent.trim();
+      document.getElementById("in_social3").value = document.getElementById("txt_social3").textContent.trim();
+      document.getElementById("in_social").value = document.getElementById("link_social").href;
+      const waHref = document.getElementById("link_whatsapp").href;
+      const waMatch = waHref.match(/wa\.me\/(\d+)/);
+      document.getElementById("in_whatsapp").value = waMatch ? waMatch[1] : "";
+    }
+
+    // Apply Settings Object to Page
+    function applySiteSettings(cfg) {
+      if (!cfg) return;
+      if (cfg.presName) document.getElementById("txt_presName").textContent = cfg.presName;
+      if (cfg.presPhone) document.getElementById("txt_presPhone").textContent = cfg.presPhone;
+      if (cfg.secName) document.getElementById("txt_secName").textContent = cfg.secName;
+      if (cfg.secPhone) document.getElementById("txt_secPhone").textContent = cfg.secPhone;
+      if (cfg.treasName) document.getElementById("txt_treasName").textContent = cfg.treasName;
+      if (cfg.treasPhone) document.getElementById("txt_treasPhone").textContent = cfg.treasPhone;
+      if (cfg.address) document.getElementById("txt_heroAddress").textContent = cfg.address;
+      if (cfg.heroIntro) document.getElementById("txt_heroIntro").textContent = cfg.heroIntro;
+      if (cfg.kaliPuja) document.getElementById("txt_kaliPuja").textContent = cfg.kaliPuja;
+      if (cfg.saraswatiPuja) document.getElementById("txt_saraswatiPuja").textContent = cfg.saraswatiPuja;
+      if (cfg.jan23) document.getElementById("txt_jan23").textContent = cfg.jan23;
+      if (cfg.jan26) document.getElementById("txt_jan26").textContent = cfg.jan26;
+      if (cfg.aug15) document.getElementById("txt_aug15").textContent = cfg.aug15;
+      if (cfg.social1) document.getElementById("txt_social1").textContent = cfg.social1;
+      if (cfg.social2) document.getElementById("txt_social2").textContent = cfg.social2;
+      if (cfg.social3) document.getElementById("txt_social3").textContent = cfg.social3;
+      if (cfg.whatsapp) {
+        document.getElementById("link_whatsapp").href = `https://wa.me/${cfg.whatsapp.replace(/\D/g, '')}?text=Namaskar%20Young%20Star%20Club!`;
+      }
+      if (cfg.socialUrl) {
+        document.getElementById("link_social").href = cfg.socialUrl;
+      }
+      if (cfg.colors) {
+        document.documentElement.style.setProperty("--accent", cfg.colors.accent);
+        document.documentElement.style.setProperty("--bg-hero", cfg.colors.hero);
+        document.documentElement.style.setProperty("--bg-main", cfg.colors.bgMain);
+        document.documentElement.style.setProperty("--bg-card", cfg.colors.bgCard);
+        document.getElementById("col_accent").value = cfg.colors.accent;
+        document.getElementById("col_hero").value = cfg.colors.hero;
+        document.getElementById("col_bgMain").value = cfg.colors.bgMain;
+        document.getElementById("col_bgCard").value = cfg.colors.bgCard;
+      }
+    }
+
+    // Save All Text, Committee & Colors to Cloudinary as Live JSON Config
+    async function saveSiteSettings() {
+      const statuses = ["saveStatus1", "saveStatus2", "saveStatus3"].map(id => document.getElementById(id));
+      statuses.forEach(s => { s.style.color = "#ea580c"; s.textContent = "Saving changes live..."; });
+
+      const configData = {
+        presName: document.getElementById("in_presName").value,
+        presPhone: document.getElementById("in_presPhone").value,
+        secName: document.getElementById("in_secName").value,
+        secPhone: document.getElementById("in_secPhone").value,
+        treasName: document.getElementById("in_treasName").value,
+        treasPhone: document.getElementById("in_treasPhone").value,
+        address: document.getElementById("in_address").value,
+        heroIntro: document.getElementById("in_heroIntro").value,
+        kaliPuja: document.getElementById("in_kaliPuja").value,
+        saraswatiPuja: document.getElementById("in_saraswatiPuja").value,
+        jan23: document.getElementById("in_jan23").value,
+        jan26: document.getElementById("in_jan26").value,
+        aug15: document.getElementById("in_aug15").value,
+        social1: document.getElementById("in_social1").value,
+        social2: document.getElementById("in_social2").value,
+        social3: document.getElementById("in_social3").value,
+        whatsapp: document.getElementById("in_whatsapp").value,
+        socialUrl: document.getElementById("in_social").value,
+        colors: {
+          accent: document.getElementById("col_accent").value,
+          hero: document.getElementById("col_hero").value,
+          bgMain: document.getElementById("col_bgMain").value,
+          bgCard: document.getElementById("col_bgCard").value
+        }
+      };
+
+      applySiteSettings(configData);
+      localStorage.setItem("ysc_site_config", JSON.stringify(configData));
+
+      // Upload JSON file to Cloudinary ('raw' resource with tag 'ysc_config') so every visitor sees it!
+      const blob = new Blob([JSON.stringify(configData)], { type: "application/json" });
+      const formData = new FormData();
+      formData.append("file", blob, "ysc_config.json");
+      formData.append("upload_preset", UPLOAD_PRESET);
+      formData.append("tags", "ysc_config");
+
+      try {
+        const res = await fetch(`https://api.cloudinary.com/v1_1/${CLOUD_NAME}/raw/upload`, {
+          method: "POST",
+          body: formData
+        });
+        const data = await res.json();
+        if (data.secure_url) {
+          statuses.forEach(s => { s.style.color = "#16a34a"; s.textContent = "All changes saved & published live for everyone!"; });
+        } else {
+          throw new Error(data.error?.message || "Save failed");
+        }
+      } catch (err) {
+        statuses.forEach(s => { s.style.color = "#dc2626"; s.textContent = "Saved locally, cloud sync error: " + err.message; });
+      }
+    }
+
+    // Upload Club Logo
+    async function uploadLogo() {
+      const fileInput = document.getElementById("logoFileInput");
+      const status = document.getElementById("logoStatus");
+      if (!fileInput.files.length) {
+        status.style.color = "#dc2626";
+        status.textContent = "Please select a logo image first.";
+        return;
+      }
+
+      status.style.color = "#ea580c";
+      status.textContent = "Uploading logo... please wait.";
+
+      const formData = new FormData();
+      formData.append("file", fileInput.files[0]);
+      formData.append("upload_preset", UPLOAD_PRESET);
+      formData.append("tags", "ysc_logo");
+
+      try {
+        const res = await fetch(`https://api.cloudinary.com/v1_1/${CLOUD_NAME}/image/upload`, {
+          method: "POST",
+          body: formData
+        });
+        const data = await res.json();
+        if (data.secure_url) {
+          document.getElementById("navLogo").src = data.secure_url;
+          document.getElementById("heroLogo").src = data.secure_url;
+          localStorage.setItem("ysc_latest_logo", data.secure_url);
+          status.style.color = "#16a34a";
+          status.textContent = "Club Logo updated live!";
+          fileInput.value = "";
+        } else {
+          throw new Error(data.error?.message || "Upload failed");
+        }
+      } catch (err) {
+        status.style.color = "#dc2626";
+        status.textContent = "Error: " + err.message;
+      }
+    }
+
+    // Upload Year-Wise Photo OR Video
+    async function uploadGalleryMedia() {
+      const fileInput = document.getElementById("galleryFileInput");
+      const year = document.getElementById("photoYearInput").value.trim() || "2026";
+      const title = document.getElementById("photoTitleInput").value.trim() || "Young Star Club Memory";
+      const status = document.getElementById("galleryStatus");
+
+      if (!fileInput.files.length) {
+        status.style.color = "#dc2626";
+        status.textContent = "Please choose a photo or video first.";
+        return;
+      }
+
+      const file = fileInput.files[0];
+      const isVideo = file.type.startsWith("video/");
+      const resourceType = isVideo ? "video" : "image";
+
+      status.style.color = "#ea580c";
+      status.textContent = isVideo ? "Uploading video... (may take 10-20 sec)" : "Uploading photo... please wait.";
+
+      const formData = new FormData();
+      formData.append("file", file);
+      formData.append("upload_preset", UPLOAD_PRESET);
+      formData.append("tags", "ysc_gallery");
+      formData.append("context", `year=${year}|caption=${title.replace(/\|/g, "-")}`);
+
+      try {
+        const res = await fetch(`https://api.cloudinary.com/v1_1/${CLOUD_NAME}/${resourceType}/upload`, {
+          method: "POST",
+          body: formData
+        });
+        const data = await res.json();
+        if (data.secure_url) {
+          const newItem = { url: data.secure_url, type: resourceType, year: year, title: title };
+          allMedia.unshift(newItem);
+          localStorage.setItem("ysc_cached_media", JSON.stringify(allMedia));
+          renderFilters();
+          renderGallery();
+
+          status.style.color = "#16a34a";
+          status.textContent = `${isVideo ? "Video" : "Photo"} added live to ${year} gallery!`;
+          fileInput.value = "";
+          document.getElementById("photoTitleInput").value = "";
+        } else {
+          throw new Error(data.error?.message || "Upload failed");
+        }
+      } catch (err) {
+        status.style.color = "#dc2626";
+        status.textContent = "Error: " + err.message;
+      }
+    }
+
+    // Load Live Settings, Logo, Photos & Videos from Cloudinary
+    async function loadAllClubData() {
+      // 1. Load cached settings & logo immediately
+      const cachedCfg = localStorage.getItem("ysc_site_config");
+      if (cachedCfg) applySiteSettings(JSON.parse(cachedCfg));
+
+      const cachedLogo = localStorage.getItem("ysc_latest_logo");
+      if (cachedLogo) {
+        document.getElementById("navLogo").src = cachedLogo;
+        document.getElementById("heroLogo").src = cachedLogo;
+      }
+
+      // 2. Fetch latest live site text/colors config ('raw' list)
+      try {
+        const cfgListRes = await fetch(`https://res.cloudinary.com/${CLOUD_NAME}/raw/list/ysc_config.json?v=${Date.now()}`);
+        if (cfgListRes.ok) {
+          const cfgList = await cfgListRes.json();
+          if (cfgList.resources && cfgList.resources.length > 0) {
+            const latestCfg = cfgList.resources[0];
+            const cfgFileUrl = `https://res.cloudinary.com/${CLOUD_NAME}/raw/upload/v${latestCfg.version}/${latestCfg.public_id}`;
+            const cfgDataRes = await fetch(cfgFileUrl);
+            if (cfgDataRes.ok) {
+              const liveCfg = await cfgDataRes.json();
+              applySiteSettings(liveCfg);
+              localStorage.setItem("ysc_site_config", JSON.stringify(liveCfg));
+            }
+          }
+        }
+      } catch (e) {}
+
+      // 3. Fetch latest live logo
+      try {
+        const logoRes = await fetch(`https://res.cloudinary.com/${CLOUD_NAME}/image/list/ysc_logo.json?v=${Date.now()}`);
+        if (logoRes.ok) {
+          const logoData = await logoRes.json();
+          if (logoData.resources && logoData.resources.length > 0) {
+            const latest = logoData.resources[0];
+            const logoUrl = `https://res.cloudinary.com/${CLOUD_NAME}/image/upload/v${latest.version}/${latest.public_id}.${latest.format}`;
+            document.getElementById("navLogo").src = logoUrl;
+            document.getElementById("heroLogo").src = logoUrl;
+            localStorage.setItem("ysc_latest_logo", logoUrl);
+          }
+        }
+      } catch (e) {}
+
+      // 4. Fetch both Images AND Videos tagged 'ysc_gallery'
+      let liveItems = [];
+      try {
+        const [imgRes, vidRes] = await Promise.all([
+          fetch(`https://res.cloudinary.com/${CLOUD_NAME}/image/list/ysc_gallery.json?v=${Date.now()}`),
+          fetch(`https://res.cloudinary.com/${CLOUD_NAME}/video/list/ysc_gallery.json?v=${Date.now()}`)
+        ]);
+
+        if (imgRes.ok) {
+          const imgData = await imgRes.json();
+          (imgData.resources || []).forEach(item => {
+            const ctx = item.context?.custom || {};
+            liveItems.push({
+              url: `https://res.cloudinary.com/${CLOUD_NAME}/image/upload/v${item.version}/${item.public_id}.${item.format}`,
+              type: "image",
+              year: ctx.year || "2026",
+              title: ctx.caption || "Young Star Club Photo",
+              created: item.created_at || ""
+            });
+          });
+        }
+
+        if (vidRes.ok) {
+          const vidData = await vidRes.json();
+          (vidData.resources || []).forEach(item => {
+            const ctx = item.context?.custom || {};
+            liveItems.push({
+              url: `https://res.cloudinary.com/${CLOUD_NAME}/video/upload/v${item.version}/${item.public_id}.${item.format}`,
+              type: "video",
+              year: ctx.year || "2026",
+              title: ctx.caption || "Young Star Club Video",
+              created: item.created_at || ""
+            });
+          });
+        }
+      } catch (e) {}
+
+      if (liveItems.length > 0) {
+        liveItems.sort((a, b) => (b.created > a.created ? 1 : -1));
+        allMedia = liveItems;
+        localStorage.setItem("ysc_cached_media", JSON.stringify(allMedia));
+      } else {
+        const cached = localStorage.getItem("ysc_cached_media");
+        allMedia = cached ? JSON.parse(cached) : defaultMedia;
+      }
+
+      renderFilters();
+      renderGallery();
+    }
+
+    // Filter Buttons & Gallery Rendering (Images + Videos)
+    function renderFilters() {
+      const filterBar = document.getElementById("filterBar");
+      const years = [...new Set(allMedia.map(p => p.year))].sort((a, b) => b - a);
+      filterBar.innerHTML = `<button class="filter-btn ${currentFilter === 'all' ? 'active' : ''}" onclick="filterGallery('all', this)">All Years</button>`;
+      years.forEach(yr => {
+        filterBar.innerHTML += `<button class="filter-btn ${currentFilter === yr ? 'active' : ''}" onclick="filterGallery('${yr}', this)">${yr}</button>`;
+      });
+    }
+
+    function filterGallery(year, btn) {
+      currentFilter = year;
+      document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+      if (btn) btn.classList.add("active");
+      renderGallery();
+    }
+
+    function renderGallery() {
+      const grid = document.getElementById("galleryGrid");
+      const filtered = currentFilter === "all" ? allMedia : allMedia.filter(p => p.year === currentFilter);
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `<p style="color: var(--text-muted);">No photos or videos found for this year.</p>`;
+        return;
+      }
+
+      grid.innerHTML = filtered.map(item => {
+        const safeTitle = item.title.replace(/'/g, "\\'");
+        const mediaTag = item.type === "video"
+          ? `<video src="${item.url}#t=0.5" muted playsinline preload="metadata"></video><span class="type-badge">&#9654; VIDEO</span>`
+          : `<img src="${item.url}" alt="${item.title}" loading="lazy" />`;
+
+        return `
+          <div class="gallery-card" onclick="openLightbox('${item.url}', '${item.type}', '${safeTitle} (${item.year})')">
+            <div class="gallery-media">
+              <span class="year-badge">${item.year}</span>
+              ${mediaTag}
+            </div>
+            <div class="gallery-caption">${item.title}</div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    // Fullscreen Lightbox (Plays Videos & Zooms Photos)
+    function openLightbox(url, type, caption) {
+      const container = document.getElementById("lightboxMediaContainer");
+      if (type === "video") {
+        container.innerHTML = `<video src="${url}" controls autoplay playsinline></video>`;
+      } else {
+        container.innerHTML = `<img src="${url}" alt="Preview" />`;
+      }
+      document.getElementById("lightboxCaption").textContent = caption;
+      document.getElementById("lightbox").classList.add("active");
+    }
+
+    function closeLightbox(e) {
+      if (e && e.target.tagName === "VIDEO") return;
+      document.getElementById("lightboxMediaContainer").innerHTML = "";
+      document.getElementById("lightbox").classList.remove("active");
+    }
+
+    // Boot
+    loadAllClubData();
+  </script>
+</body>
+</html>
